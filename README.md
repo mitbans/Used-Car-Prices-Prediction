@@ -1,5 +1,5 @@
-# Project Overview: Predicting Used Car Prices Using CRISP-DM Framework
-## Introduction
+# Predicting Used Car Prices Using CRISP-DM Framework
+## Project Overview and Introduction
 In the highly competitive used car market, accurate pricing is crucial for maximizing profits, attracting customers, and managing inventory effectively. Our project aims to leverage data analytics and machine learning to identify key drivers of used car prices and develop a predictive model to forecast these prices accurately. This will enable our business to make informed pricing decisions, enhance customer trust, and improve overall business performance.
 
 ## CRISP-DM Framework
