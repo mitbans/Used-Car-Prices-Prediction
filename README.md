@@ -167,6 +167,9 @@ The VIF results provided show that several features have inf (infinity) values, 
 
 <img width="883" alt="image" src="https://github.com/mitbans/used-car-price-prediction/assets/166747739/72ed88ec-1e5f-4284-b083-699c2a37962f">
  
-- **Permutation Inportance** was used to assess the importance of the coefficients.
+- **Permutation Inportance** was used to assess the importance of the coefficients. It didn't make any difference in the performance of the model after removing negative permutation importance coefficients.
+    - Linear Regression: RMSE = 5675.6693, R2 = 0.6510
+    - Ridge: RMSE = 5675.6696, R2 = 0.6510
+    - Lasso: RMSE = 5676.2251, R2 = 0.6510
 
 ## Conclusion
