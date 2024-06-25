@@ -110,9 +110,25 @@ Parameters were tuned using techniques like grid search combined with cross-vali
 ### Modeling Output
 Linear Regression has the best performance among the four models with the lowest RMSE and the highest R2 value. It is the most suitable model for this dataset based on the given metrics. Similar output from Ridge and Lasso, which can further be evaluated for different alphas.
 
+- **Results:**
+    - Linear Regression: RMSE = 5676.3165, R2 = 0.6510
+    - Ridge Regression: RMSE = 5676.3202, R2 = 0.6510
+    - Lasso Regression: RMSE = 5676.6817, R2 = 0.6509
+    - Elastic Net Regression: RMSE = 6160.6749, R2 = 0.5889
+      
 - **`RMSE (Root Mean Squared Error) = 5676.3165`**: This value indicates the average error in the predictions. In this context, it means that on average, the model's predictions are off by about 5676.3165 units from the actual values of the car price.
 
 - **`R2 (R-squared) = 0.6510`**: This value indicates that approximately 65.10% of the variance in the target variable (price) is explained by the features in the model. While this is a good level of explanation, it indicates that there is still about 35% of unexplained variance, suggesting room for model improvement.
+
+## Evaluation
+In the Evaluation phase, we assessed the performance of the trained models to ensure they met our project objectives and business requirements:
+
+- **Metrics:**
+We used several evaluation metrics such as Mean Squared Error (MSE), Root Mean Squared Error (RMSE), and R-squared (R²) to quantify the accuracy of predictions. These metrics provided insights into how well the models predicted used car prices compared to actual values.
+
+- **Validation:**
+The models were validated using the test dataset, which was set aside during the data preparation phase.
+This step ensured that the models generalized well to unseen data and avoided overfitting to the training dataset.
 
 - **Variance Inflation Factor (VIF)**, a measure of multicollinearity in a set of regression variables was used but found not helpful in improving the model performance. 
   - **Interpretation of VIF Results**
@@ -124,5 +140,33 @@ The VIF results provided show that several features have inf (infinity) values, 
       - **Fuel Types:** All fuel type categories have infinite VIF.
       - **Transmission Types:** Transmission types have infinite VIF.
 
+    - **Results:** are rather worse after dropping 'inf' multi-collinearity columns as determined by VIF.
+        - Linear Regression: RMSE = 5927.4558, R2 = 0.6194
+        - Ridge Regression: RMSE = 5927.4559, R2 = 0.6194
+        - Lasso Regression: RMSE = 5927.4650, R2 = 0.6194
+        - Elastic Net Regression: RMSE = 6233.9973, R2 = 0.5790
+
+- **Cross Validation and Hyperparameter Tuning** was performed to evaluate the models. The performance remains unchanged as expected since Linear Regression does not have hyperparameters to tune. It serves as a baseline for comparison. Based on the post-tuning metrics, Linear Regression is the best performing model with the lowest RMSE and highest R2 score, making it the preferred choice for predicting used car prices in this context.
+    - Linear Regression: Cross-validation RMSE = 5608.2921
+    - Best Ridge: {'alpha': 100.0}, RMSE = 5620.4871
+    - Best Lasso: {'alpha': 0.1}, RMSE = 5620.5940
+    
+    - Evaluate the best models on the test set
+        - Linear Regression: RMSE = 5676.3165, R2 = 0.6510
+        - Ridge: RMSE = 5676.8223, R2 = 0.6509
+        - Lasso: RMSE = 5676.3500, R2 = 0.6510
+          
+- **Best Model: Linear Regression with cross-validation**
+    - Mean cross-validation score: 0.6627814416762869
+    - Standard deviation of cross-validation score: 0.007372523909095059
+    
+    - **Sample Actual vs Predicted values**
+    <img width="192" alt="image" src="https://github.com/mitbans/used-car-price-prediction/assets/166747739/3d93d1b3-027f-462c-85cd-5adf2f766e60">
+
+<img width="906" alt="image" src="https://github.com/mitbans/used-car-price-prediction/assets/166747739/2fe37565-c5b8-4963-82f6-b0c650579411">
+
+<img width="883" alt="image" src="https://github.com/mitbans/used-car-price-prediction/assets/166747739/72ed88ec-1e5f-4284-b083-699c2a37962f">
+ 
 - **Permutation Inportance** was used to assess the importance of the coefficients.
 
+## Conclusion
