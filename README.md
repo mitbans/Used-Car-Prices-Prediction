@@ -1,4 +1,4 @@
-# Predicting Used Car Prices Using CRISP-DM Framework
+# Predicting Used Car Prices
 
 <div align="center">
     <img width="384" alt="image" src="https://github.com/mitbans/used-car-price-prediction/assets/166747739/6d895f33-bdc4-4287-bc4c-aa1dee199138">
