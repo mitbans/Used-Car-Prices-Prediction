@@ -1,9 +1,18 @@
 # Predicting Used Car Prices Using CRISP-DM Framework
+
+<div align="center">
+    <img width="384" alt="image" src="https://github.com/mitbans/used-car-price-prediction/assets/166747739/6d895f33-bdc4-4287-bc4c-aa1dee199138">
+</div>
+
 ## Project Overview and Introduction
 In the highly competitive used car market, accurate pricing is crucial for maximizing profits, attracting customers, and managing inventory effectively. Our project aims to leverage data analytics and machine learning to identify key drivers of used car prices and develop a predictive model to forecast these prices accurately. This will enable our business to make informed pricing decisions, enhance customer trust, and improve overall business performance.
 
 ## CRISP-DM Framework
 We will use the CRISP-DM (Cross-Industry Standard Process for Data Mining) framework to guide our project. This widely adopted methodology provides a structured approach to data mining and ensures systematic and efficient analysis. The CRISP-DM process consists of six phases: Business Understanding, Data Understanding, Data Preparation, Modeling, Evaluation, and Deployment.
+
+<div align="center">
+    <img width="354" alt="image" src="https://github.com/mitbans/used-car-price-prediction/assets/166747739/80fd2b6e-54bb-4a3a-abe6-1bd913563b81">
+</div>
 
 ## Business Understanding
 
