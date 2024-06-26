@@ -161,12 +161,19 @@ The VIF results provided show that several features have inf (infinity) values, 
     - Standard deviation of cross-validation score: 0.007372523909095059
     
     - **Sample Actual vs Predicted values**
-    <img width="192" alt="image" src="https://github.com/mitbans/used-car-price-prediction/assets/166747739/3d93d1b3-027f-462c-85cd-5adf2f766e60">
 
-<img width="906" alt="image" src="https://github.com/mitbans/used-car-price-prediction/assets/166747739/2fe37565-c5b8-4963-82f6-b0c650579411">
+      <img width="192" alt="image" src="https://github.com/mitbans/used-car-price-prediction/assets/166747739/3d93d1b3-027f-462c-85cd-5adf2f766e60">
 
-<img width="883" alt="image" src="https://github.com/mitbans/used-car-price-prediction/assets/166747739/72ed88ec-1e5f-4284-b083-699c2a37962f">
- 
+    - **Actual vs Predicted values Plot**
+<br>
+<div align="center">
+    <img width="906" alt="image" src="https://github.com/mitbans/used-car-price-prediction/assets/166747739/2fe37565-c5b8-4963-82f6-b0c650579411">
+    <br>
+    <br>
+    <img width="883" alt="image" src="https://github.com/mitbans/used-car-price-prediction/assets/166747739/72ed88ec-1e5f-4284-b083-699c2a37962f">
+</div>
+
+<br>
 - **Permutation Inportance** was used to assess the importance of the coefficients. It didn't make any difference in the performance of the model after removing negative permutation importance coefficients.
     - Linear Regression: RMSE = 5675.6693, R2 = 0.6510
     - Ridge: RMSE = 5675.6696, R2 = 0.6510
