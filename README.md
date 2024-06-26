@@ -228,4 +228,4 @@ By leveraging these insights, our business can improve its competitive edge, dri
 - <code>README.md</code>: Summary of findings and link to notebook
 
 ## Notebook
-The detailed analysis and code can be found in the Jupyter notebook <a href=" ">here</a>.
+The detailed analysis and code can be found in the Jupyter notebook <a href="https://github.com/mitbans/used-car-price-prediction/blob/main/notebooks/used-car-price-prediction.ipynb">here</a>.
