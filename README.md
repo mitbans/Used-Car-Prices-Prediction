@@ -170,7 +170,9 @@ The VIF results provided show that several features have inf (infinity) values, 
         - Linear Regression: RMSE = 5676.3165, R2 = 0.6510
         - Ridge: RMSE = 5676.8223, R2 = 0.6509
         - Lasso: RMSE = 5676.3500, R2 = 0.6510
-          
+
+## Model Predictions
+
 - **Best Model: Linear Regression with cross-validation**
     - Mean cross-validation score: 0.6627814416762869
     - Standard deviation of cross-validation score: 0.007372523909095059
