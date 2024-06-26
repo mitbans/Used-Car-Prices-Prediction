@@ -75,7 +75,7 @@ These exploratory analyses laid the foundation for subsequent data preparation a
 In the Data Preparation phase we focused on transforming the raw dataset into a clean and structured format suitable for modeling. This phase is crucial for ensuring the accuracy and reliability of our predictive model. Here’s a detailed overview of the steps taken:
 
 - **Data Cleaning:**
-    - **Handling Missing Values:** Missing values were identified across various columns such as year, manufacturer, model, condition, cylinders, fuel type, odometer readings, title status, transmission type, drive type, size category, car type, paint color, and state.
+    - **Handling Missing Values:** Missing values were identified and handled across various columns such as year, manufacturer, model, condition, cylinders, fuel type, odometer readings, title status, transmission type, drive type, size category, car type, paint color, and state.
     - **Handling Outliers:** remove, transforming (e.g., using log transformation), or cap outliers (set a limit on extreme values).
     - **Remove duplicates**
     - **Handling incorrect data types** None required
@@ -173,3 +173,52 @@ The VIF results provided show that several features have inf (infinity) values, 
     - Lasso: RMSE = 5676.2251, R2 = 0.6510
 
 ## Conclusion
+In conclusion, this project focused on predicting used car prices using a structured approach based on the CRISP-DM framework. We started with understanding business objectives and data collection, followed by thorough data preparation, modeling, evaluation, and deployment phases. Here's a summary of our findings and actionable insights:
+
+### Interesting Findings
+
+### Interesting Findings
+
+| Feature      | Recommendation                                                                 | Coefficient Value          | Impact   | Interpretation                                                              |
+|--------------|-------------------------------------------------------------------------------|----------------------------|----------|----------------------------------------------------------------------------|
+| Fuel         | Collect more data on electric and hybrid models, and consider offering incentives for fuel-efficient options | Diesel - 4892.09          | High     | Fuel type Diesel is associated with higher prices, with electric and hybrid models also contributing to higher prices |
+| Type         | Focus on marketing convertibles, offroad, pickup, truck, and coupe models     | Convertible - 2707.22      | High     | Convertibles, offroad, pickup trucks, trucks, and coupes are associated with higher prices |
+| Make, Model  | Highlight popular makes and models in listings                                | 2539.73                    | High     | Certain makes and models can drastically increase the price                |
+| Cylinders    | Emphasize performance aspects in high-cylinder vehicles                       | 1398.6                     | Medium   | Vehicles with more cylinders are often high-performance and can command higher prices |
+| Condition    | Ensure accurate and detailed condition reports                                | 759.02                     | Medium   | Better condition typically results in higher prices                        |
+| Odometer     | Highlight vehicles with lower mileage prominently                             | -2013                      | High     | Higher mileage significantly reduces the price                              |
+| Title Status | Consider investigating the reasons for price differences and provide clear title status information | 1007.08                    | Medium   | Clear title status increases the vehicle's price                            |
+| Transmission | Promote manual transmissions and educate buyers on their benefits             | Manual: 734, Auto: -643    | Medium   | Manual transmissions increase the price, while automatic transmissions slightly reduce it |
+| Drive        | Highlight the benefits of specific drive types, such as 4WD                   | 575.37                     | Low      | Certain drive types (e.g., 4WD) can increase the price                      |
+| Size         | Emphasize the advantages of larger vehicle sizes in listings                  | 428.59                     | Low      | Larger vehicle sizes can lead to a price increase                           |
+| Paint Color  | Consider studying the popularity of colors in the market and highlight desirable colors | Yellow: 658, Custom: 599 | Low      | Popular or unique colors can increase the price                             |
+| Vehicle Age  | Provide maintenance records and emphasize longevity for older vehicles        | -4832.72                   | Very High| Older vehicles significantly decrease in price                              |
+
+## Actionable Insights
+
+- **Optimize Pricing Strategy:**
+    - Implement dynamic pricing based on mileage, vehicle age, and demand to maximize profits.
+    - Monitor regional trends and adjust prices to align with local market conditions.
+- **Enhance Inventory Management:**
+    - Focus on high-demand models and manufacturers with strong resale value.
+    - Use predictive models to forecast inventory turnover and manage stock levels efficiently.
+- **Improve Customer Engagement:**
+    - Tailor marketing efforts to highlight popular features like low mileage and specific models.
+    - Provide transparent pricing and detailed vehicle histories to build trust and attract buyers.
+- **Continuous Model Refinement:**
+    - Regularly update the predictive model with new data to maintain accuracy.
+    - Incorporate user feedback and market insights to enhance model performance.
+
+By leveraging these insights, our business can improve its competitive edge, drive revenue growth, and enhance customer satisfaction.
+
+## Future Work
+- **Analyze Price Variations:** Investigate how prices change for specific makes and models to identify trends and optimize pricing strategies.
+- **Examine Regional Drivers:** Explore state and regional data to understand local market drivers and adjust strategies accordingly.
+
+## Repository Structure
+- <code>data/vehicles.csv</code>: Contains dataset used in the analysis.
+- <code>notebooks/used-car-price-prediction.jpynb</code>: Jupyter notebook with code.
+- <code>README.md</code>: Summary of findings and link to notebook
+
+## Notebook
+The detailed analysis and code can be found in the Jupyter notebook <a href=" ">here</a>.
