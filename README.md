@@ -201,8 +201,6 @@ In conclusion, this project focused on predicting used car prices using a struct
 
 ### Interesting Findings
 
-### Interesting Findings
-
 | Feature      | Recommendation                                                                 | Coefficient Value          | Impact   | Interpretation                                                              |
 |--------------|-------------------------------------------------------------------------------|----------------------------|----------|----------------------------------------------------------------------------|
 | Fuel         | Collect more data on electric and hybrid models, and consider offering incentives for fuel-efficient options | Diesel - 4892.09          | High     | Fuel type Diesel is associated with higher prices, with electric and hybrid models also contributing to higher prices |
